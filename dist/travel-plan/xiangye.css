@@ -1,0 +1,11 @@
+/* Hallmark · pre-emit critique: P4 H4 E4 S5 R4 V4 · original module, Xiangye palette */
+:root{--xiangye-paper:#fbf7ed;--xiangye-ink:#28282b;--xiangye-pink:#f2c7dd;--xiangye-yellow:#f6dc75;--xiangye-blue:#b8d6f5;--xiangye-green:#c9d99e}
+body{background:var(--xiangye-paper);color:var(--xiangye-ink)}
+.xiangye-return{position:relative;display:inline-flex;margin:12px 18px 0;padding:10px 14px;border-radius:999px;background:var(--xiangye-ink);color:var(--xiangye-paper);font:600 14px/1.4 system-ui,sans-serif;text-decoration:none;z-index:20}
+.hero{background:var(--xiangye-paper)}.section-kicker{color:#99645d}.day-card,.rental-panel,.flight-card{background:#fffdf7}.day-dot{background:var(--xiangye-pink)}
+.topbar .travel-navigation summary,.topbar .primary-navigation__ledger{background:transparent;color:var(--xiangye-ink);font-weight:700}
+.topbar .travel-navigation summary:hover,.topbar .primary-navigation__ledger:hover{color:#835d64}
+.topbar .wordmark{color:var(--xiangye-ink);font-weight:800}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #335b95;outline-offset:2px}
+.xiangye-egypt #route .route-explorer,.xiangye-egypt #route .route-note{display:none}
+.xiangye-real-map-link{display:inline-block;margin:16px 0 22px;padding:14px 20px;border-radius:999px;background:var(--xiangye-pink);color:var(--xiangye-ink);font-weight:800;text-decoration:none}
