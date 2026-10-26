@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#fbf7ed">
+  <meta name="description" content="向野埃及实景探索地图：开罗与吉萨博物馆、历史遗址、中文讲解与行程收藏。">
+  <title>埃及探索地图 · 向野</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="egypt-atlas.css?v=6">
+  <script src="egypt-guides.js?v=6" defer></script>
+  <script src="vendor/leaflet/leaflet.js" defer></script>
+  <script type="module" src="egypt-atlas.js?v=7"></script>
+</head>
+<body>
+  <header class="atlas-header">
+    <a class="back" href="./?v=6" aria-label="返回向野">←</a>
+    <div><b>向野 · 埃及</b><span>真实地图与有出处的讲解</span></div>
+    <a class="header-plan" href="./?atlasPlan=egypt&v=6">规划</a>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="atlas-title">
+      <div class="eyebrow">FIELD ATLAS / 01</div>
+      <h1 id="atlas-title">在开罗与吉萨，<br><span>慢慢看见埃及。</span></h1>
+      <p>这是一张可拖动、可放大、位置对应真实世界的地图。点地标，读完一段讲解，再决定要不要放进你的旅程。</p>
+      <div class="legend"><span><i class="dot museum"></i>博物馆</span><span><i class="dot heritage"></i>历史遗址</span><span><i class="dot saved"></i>已排入行程</span></div>
+    </section>
+    <section class="map-section" aria-labelledby="map-title">
+      <div class="section-heading"><div><span>01 / 找位置</span><h2 id="map-title">真实地图</h2></div><button id="reset-view" type="button">回到全景</button></div>
+      <div class="map-frame">
+        <div id="egypt-map" role="application" aria-label="埃及开罗及吉萨交互地图"></div>
+        <div class="map-hint">双指缩放 · 拖动探索 · 点图钉看讲解</div>
+        <div id="map-status" class="map-status" role="status" hidden></div>
+      </div>
+      <p class="map-note">地图底图为 OpenStreetMap 数据，点位对应真实坐标；这是可缩放的街道与地形参考图，并非卫星实拍或游戏生成图，也不把直线冒充道路导航。网络或地图服务不可用时，下方导览仍可阅读。</p>
+    </section>
+    <section class="places" aria-labelledby="places-title">
+      <div class="section-heading"><div><span>02 / 选一个地方</span><h2 id="places-title">沿着历史走</h2></div><span id="place-count" class="count"></span></div>
+      <div class="filters" role="group" aria-label="筛选地点"><button class="selected" data-filter="all" aria-pressed="true">全部</button><button data-filter="博物馆" aria-pressed="false">博物馆</button><button data-filter="遗址" aria-pressed="false">历史遗址</button></div>
+      <div id="place-list" class="place-list"></div>
+    </section>
+    <section class="guide" id="guide" aria-labelledby="guide-title">
+      <div class="guide-top"><span id="guide-index">03 / 听一段讲解</span><span id="guide-kind" class="guide-kind"></span></div>
+      <h2 id="guide-title"></h2><p id="guide-lead" class="guide-lead"></p>
+      <div id="guide-sections"></div>
+      <div class="guide-actions"><button id="speak-guide" type="button">▷ 朗读讲解</button><button id="view-place" type="button">在地图上看</button></div>
+      <div id="trip-controls" class="trip-controls"></div>
+      <div class="sources"><strong>资料出处</strong><div id="guide-sources"></div><p>上方为向野据公开资料撰写的中文导览，并非博物馆官方语音讲解；文字朗读由设备语音合成。开放时间、票价、展区可能变化，请到官方页面核对。</p></div>
+    </section>
+    <section class="route" id="route" aria-labelledby="route-title"><div class="section-heading"><div><span>04 / 回到行程</span><h2 id="route-title">这一日怎么走</h2></div></div><div id="route-content"></div></section>
+  </main>
+  <footer>向野 XIANGYE · 地图数据：OpenStreetMap · <a href="./?v=6">返回旅行首页</a></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

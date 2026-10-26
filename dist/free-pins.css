@@ -1,0 +1,5 @@
+.trip-map-search-results{display:grid;gap:8px;margin:0 0 18px;color:var(--color-ink);font-size:13px}
+.trip-map-search-results p{margin:0 0 3px;line-height:1.5}
+.trip-place-candidate{display:grid;gap:4px;width:100%;min-height:56px;padding:10px 12px;text-align:left;border:1px solid var(--color-line);border-radius:14px;background:var(--color-paper-2);color:var(--color-ink);cursor:pointer}
+.trip-place-candidate:hover,.trip-place-candidate:focus-visible{border-color:var(--color-ink);background:var(--color-yellow)}
+.trip-place-candidate small{font-size:11px;color:var(--color-muted);line-height:1.5}

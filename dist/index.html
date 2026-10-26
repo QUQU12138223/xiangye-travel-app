@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#faf7f0">
+  <meta name="description" content="向野：搜索目的地、规划行程、探索景点与准备出发。">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <title>向野 · 把日子过成一段路</title>
+  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="theme.css?v=7">
+  <link rel="stylesheet" href="daily-workspace.css?v=7">
+  <link rel="stylesheet" href="home-choose.css?v=7">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="trip-map.css?v=8">
+  <link rel="stylesheet" href="trip-consolidate.css?v=9">
+  <link rel="stylesheet" href="free-pins.css?v=10">
+  <link rel="stylesheet" href="guide-ui.css?v=11">
+  <link rel="stylesheet" href="manual-pins.css?v=12">
+  <link rel="stylesheet" href="readiness-ring.css?v=13">
+  <link rel="stylesheet" href="journey-coach.css?v=15">
+  <link rel="stylesheet" href="today-mode.css?v=3">
+  <link rel="stylesheet" href="archive-deck.css?v=1">
+  <script src="globe.js?v=7" defer></script>
+  <script src="photos.js?v=5" defer></script>
+  <script src="app.js?v=6" defer></script>
+  <script src="egypt-guides.js?v=8" defer></script>
+  <script src="guide-data.js?v=11" defer></script>
+  <script src="world-guides.js?v=12" defer></script>
+  <script src="destination-covers.js?v=2" defer></script>
+  <script src="place-registry.js?v=9" defer></script>
+  <script src="geo-service.js?v=12" defer></script>
+  <script src="globe-places.js?v=10" defer></script>
+  <script src="design.js?v=5" defer></script>
+  <script src="integration.js?v=7" defer></script>
+  <script src="daily-workspace.js?v=7" defer></script>
+  <script src="vendor/leaflet/leaflet.js" defer></script>
+  <script src="trip-map.js?v=14" defer></script>
+  <script src="trip-consolidate.js?v=9" defer></script>
+  <script src="free-pins.js?v=10" defer></script>
+  <script src="manual-pins.js?v=12" defer></script>
+  <script src="guide-ui.js?v=11" defer></script>
+  <script src="readiness-ring.js?v=13" defer></script>
+  <script src="journey-coach.js?v=16" defer></script>
+  <script src="today-mode.js?v=3" defer></script>
+  <script src="archive-deck.js?v=2" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="masthead">
+      <button class="wordmark" data-action="home" aria-label="回到发现页">向野<span>GO SOMEWHERE REAL</span></button>
+      <button class="profile-dot" data-action="profile" aria-label="我的旅行">你</button>
+    </header>
+    <main id="app" tabindex="-1"></main>
+    <nav class="tabs" aria-label="主导航">
+      <button data-tab="discover" class="active" aria-current="page"><span class="tab-icon">⌂</span>发现</button>
+      <button data-tab="trips"><span class="tab-icon">⌁</span>行程</button>
+      <button data-tab="plan"><span class="tab-icon">＋</span>规划</button>
+      <button data-tab="checklist"><span class="tab-icon">☑</span>清单</button>
+      <button data-tab="profile"><span class="tab-icon">○</span>我的</button>
+    </nav>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+</body>
+</html>
